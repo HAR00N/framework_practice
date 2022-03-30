@@ -24,5 +24,5 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-# node, vue 연동 blog
+# referenced blog about how to link node.js and vue.js
 https://vlee.kr/4155
