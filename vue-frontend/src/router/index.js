@@ -31,7 +31,12 @@ const routes = [
     name: 'id',
     component: () => import('../views/NameView.vue')
     // component: NameView
-  }
+  },
+  {
+    path: '/grid',
+    name: 'grid',
+    component: () => import('../views/GridView.vue')
+  },
 ]
 
 const router = new VueRouter({
