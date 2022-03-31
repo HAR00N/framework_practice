@@ -1,5 +1,6 @@
 # build stage
 FROM node:lts-alpine as build-stage
+MAINTAINER HAR00N
 WORKDIR /app
 COPY package*.json ./
 RUN npm install --production
