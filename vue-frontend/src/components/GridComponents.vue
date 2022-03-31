@@ -1,6 +1,7 @@
 <template>
     <v-app>
         <v-container>
+            
             <v-row
                 no-gutters
                 style="height: 150px"
@@ -53,17 +54,19 @@
                     </v-card>
                 </v-col>
                 <v-col>
-                    <v-card 
+                    <v-card
+                        class="text-left"
                         outlined tile
-                        height="100px"
+                        height="70px"
                     >
                         2행 3열
+                     
                     </v-card>
                 </v-col>
                 <v-col>
                     <v-card 
                         outlined tile
-                        height="50px"
+                        height="100px"
                     >
                         2행 4열
                     </v-card>
@@ -79,7 +82,11 @@
                     </v-card>
                 </v-col>
                 <v-col>
-                    <v-card outlined tile>
+                    <v-card
+                        outlined tile
+                        height="300"
+                        color="red lighten-4"
+                    >
                         3행 2열
                     </v-card>
                 </v-col>

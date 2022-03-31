@@ -6,26 +6,16 @@
           contain
           height="150"
         />
-
 		<ul> 
 			<br>
 			<li v-for="DataList in DataList" v-bind:key="DataList.uid"> 
 				{{DataList.uid}} {{DataList.user_id}} {{DataList.password}}
 			</li>
 		</ul>
-	
-
+        
         <v-container fluid>
-            
-            <!-- <select v-model="selected">
-                <option disabled value="">Please select one</option>
-                <option>A</option>
-                <option>B</option>
-                <option>C</option>
-            </select>
-            <span>선택함: {{ selected }}</span> -->
-
-            <select v-model="selected">
+            <select 
+                v-model="selected">
                 <option disabled value="">Select One</option>
                 <option v-for="DataList in DataList" v-bind:key="DataList.uid"> 
                     {{DataList.user_id}}
@@ -38,6 +28,32 @@
                 </nav>
             </a>
 
+            <v-row align="center">
+                <v-col>
+                </v-col>
+                
+                <v-col
+                    class="d-flex"
+                    cols="12"
+                    sm="4"
+                >
+                    <v-select
+                    :items="items"
+                    v-model="selected_items"
+                    label="Select One"
+                    dense
+                    ></v-select>
+                    Selected: {{selected_items}}
+                </v-col>
+
+                <v-col>
+                </v-col>
+            
+            </v-row>
+            
+            <v-row>
+                {{DataList}}
+            </v-row>
         </v-container>
     </div>
 </template>
@@ -55,6 +71,8 @@ export default {
 		return {
 			DataList: [],
             selected: '',
+            selected_items:'',
+            items:['${id.userId}','B','C'],
         }
 	},
 	
