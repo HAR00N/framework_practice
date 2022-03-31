@@ -9,5 +9,5 @@
         SELECT *
         FROM framework_resource
         WHERE user_id = '${id}'
-  </select>  
+    </select>
 </mapper>
